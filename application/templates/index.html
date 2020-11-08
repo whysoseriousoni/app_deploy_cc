@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>
+			heroku app engine deploy
+		</title>
+	</head>
+
+	<body>
+		<h1><b>this project is deployed from Virtual box Linux Instance </b></h1>
+		<h4>   -create heroku account <br>
+		       -then download herokucli,git bash<br>
+		       -use cmd to access heroku <br>
+		       -heroku login<br>
+		       -python3 -m django startproject project<br>
+		       -cd to project<br>
+		       -python3 manage.py startapp application<br>
+		       -cd to application<br>
+		       -go to views.py and add index()<br>
+		       -go back and cd to project <br>
+		       -update urls.py<br>
+		       -update settings.py<br>
+		       -go to project home directory<br>
+		       -create Procfile<br>
+		       //Procfile:<br>
+		       web: gunicorn project.wsgi --log-file -<br>
+		       // end of Procfile<br>
+		       -create runtime.txt : python 3.7.9 <br>
+		       -create requirements.txt:		<br>
+					-django<br>
+					-gunicorn<br>
+					-django-heroku<br>
+			-git init<br>
+			-git login<br>
+			-git add .<br>
+			-git commit -m "first"<br>
+			-heroku create<br>
+			-git push heroku main<br>
+			-heroku open<br>
+		</h4>
+	</body>
+</html>
+
